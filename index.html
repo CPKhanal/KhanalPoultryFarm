@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanal Poultry | Premium Organic Poultry Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus+Jakarta+Sans', sans-serif;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top right, #f0fdf4, #ffffff);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+        .section-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">K</div>
+                <span class="font-extrabold text-xl tracking-tight text-green-900 uppercase">Khanal Poultry</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-semibold text-sm uppercase tracking-wider">
+                <a href="#about" class="hover:text-green-600 transition-colors">About Us</a>
+                <a href="#products" class="hover:text-green-600 transition-colors">Products</a>
+                <a href="#contact" class="px-5 py-2.5 bg-green-600 text-white rounded-full hover:bg-green-700 transition-all shadow-lg shadow-green-200">Order Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 hero-gradient relative overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+            <div class="flex-1 space-y-8 hero-content">
+                <div class="inline-flex items-center gap-2 px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm font-bold border border-green-100">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    Naturally Raised & Organic
+                </div>
+                <h1 class="text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1]">
+                    Healthy Living <br>
+                    <span class="text-green-600">Fresh Poultry.</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-lg leading-relaxed">
+                    Supplying 100% organic chicken meat and nutrient-rich organic manure. Quality you can trust, available 24/7 for your home or business.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-slate-800 transition-all text-center">Place Order</a>
+                    <a href="tel:9847871212" class="px-8 py-4 bg-white border border-slate-200 text-slate-900 rounded-2xl font-bold hover:bg-slate-50 transition-all flex items-center gap-2 justify-center">
+                        Call: 9847871212
+                    </a>
+                </div>
+                <div class="flex items-center gap-8 pt-6">
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">100%</div>
+                        <div class="text-sm text-slate-500">Organic Feed</div>
+                    </div>
+                    <div class="w-px h-10 bg-slate-200"></div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-900">24/7</div>
+                        <div class="text-sm text-slate-500">Support Ready</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 relative hero-image">
+                <div class="w-full aspect-square bg-green-100 rounded-[3rem] overflow-hidden shadow-2xl relative">
+                    <img src="./Fresh Organic Chicken.jpg" alt="Fresh Organic Chicken" class="w-full h-full object-cover">
+                    <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur p-6 rounded-2xl border border-white/50 shadow-xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white">✓</div>
+                            <div>
+                                <h4 class="font-bold">Freshness Guaranteed</h4>
+                                <p class="text-xs text-slate-500">Farm to table in under 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="about" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16 section-reveal">
+                <h2 class="text-4xl font-extrabold mb-4">Why Khanal Poultry?</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto">Traditional care meets modern distribution for the best farm products.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover section-reveal">
+                    <div class="w-14 h-14 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold">01</div>
+                    <h3 class="text-xl font-bold mb-4">Freshness Guaranteed</h3>
+                    <p class="text-slate-600 leading-relaxed">Daily processing and swift delivery ensure your kitchen gets only the freshest organic meat.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover section-reveal">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold">02</div>
+                    <h3 class="text-xl font-bold mb-4">Sustainable Loop</h3>
+                    <p class="text-slate-600 leading-relaxed">From organic feed to natural manure, we ensure a zero-waste, eco-friendly farming lifecycle.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl border border-slate-100 card-hover section-reveal">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mb-6 text-2xl font-bold">03</div>
+                    <h3 class="text-xl font-bold mb-4">Wholesale Rates</h3>
+                    <p class="text-slate-600 leading-relaxed">Competitive bulk pricing designed to help restaurants and retailers grow their profit margins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4 section-reveal">
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-4 uppercase tracking-tight">Our Inventory</h2>
+                    <p class="text-slate-500">Specialized products available in bulk for commercial partners.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="group section-reveal">
+                    <div class="h-80 rounded-3xl overflow-hidden mb-6">
+                        <img src="./meat.jpg" alt="Organic Meat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-green-600 font-bold text-sm uppercase tracking-widest">Daily Fresh</span>
+                            <h3 class="text-2xl font-bold mt-2">Fresh Organic Meat</h3>
+                            <p class="text-slate-500 mt-2 max-w-sm">Broiler meat raised on natural grains, processed under strict hygiene standards.</p>
+                        </div>
+                        <div class="bg-slate-900 text-white px-4 py-2 rounded-full text-xs font-bold uppercase">Bulk Ready</div>
+                    </div>
+                </div>
+
+                <div class="group section-reveal">
+                    <div class="h-80 rounded-3xl overflow-hidden mb-6">
+                        <img src="./Organic Manure.jpg" alt="Organic Manure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-amber-600 font-bold text-sm uppercase tracking-widest">100% Organic</span>
+                            <h3 class="text-2xl font-bold mt-2">Nutrient Manure</h3>
+                            <p class="text-slate-500 mt-2 max-w-sm">High-potency poultry manure for high-yield sustainable agriculture and gardening.</p>
+                        </div>
+                        <div class="bg-slate-900 text-white px-4 py-2 rounded-full text-xs font-bold uppercase">Tons Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Headquarters / Map Section -->
+    <section class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-white rounded-[3rem] overflow-hidden shadow-xl border border-slate-100 flex flex-col lg:flex-row items-stretch">
+                <div class="flex-1 p-12 lg:p-16 space-y-8 section-reveal">
+                    <span class="text-green-600 font-bold uppercase tracking-widest text-sm">Our Headquarters</span>
+                    <h2 class="text-4xl font-extrabold text-slate-900">Visit the <br>Khanal Farm.</h2>
+                    <p class="text-slate-600 leading-relaxed max-w-md">
+                        We invite our business partners to see our practices firsthand. Our farm operates 24/7 to ensure consistent supply and total transparency in how we raise our poultry.
+                    </p>
+                    <div class="pt-4">
+                        <a href="https://maps.app.goo.gl/ceGLQfy3mnGns5h48" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-green-600 text-white rounded-2xl font-bold hover:bg-green-700 transition-all shadow-lg shadow-green-100">
+                            <span>📍</span> Get Directions
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-1 min-h-[400px] relative">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3517.4019549593722!2d82.2545683!3d28.1646887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3997f55e58d77bab%3A0x9336700cf43f0df3!2sKhanal%20Kukhura%20Farm!5e0!3m2!1sen!2sca!4v1772249581094!5m2!1sen!2sca" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="contact" class="py-24 px-6 bg-green-900 text-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+            <div class="section-reveal">
+                <h2 class="text-5xl font-extrabold mb-8 leading-tight">Start Your <br><span class="text-green-400">Wholesale Order</span></h2>
+                <p class="text-green-100/70 text-lg mb-12 max-w-md">
+                    Fill out the form below and our team will get back to you within 60 minutes with a custom quote for your poultry needs.
+                </p>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-800 rounded-xl flex items-center justify-center">📞</div>
+                        <div>
+                            <p class="text-sm text-green-300">Call Us Anytime</p>
+                            <p class="font-bold text-xl text-white">9847871212</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-green-800 rounded-xl flex items-center justify-center">📧</div>
+                        <div>
+                            <p class="text-sm text-green-300">Email Address</p>
+                            <p class="font-bold text-lg text-white">khanalsaroj886@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-[2rem] p-8 md:p-12 text-slate-900 shadow-2xl section-reveal">
+                <form action="https://formsubmit.co/cpkhanal0@gmail.com" method="POST" class="space-y-6">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Order Inquiry from Website">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Full Name</label>
+                            <input type="text" name="name" required class="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all outline-none" placeholder="John Doe">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Phone Number</label>
+                            <input type="tel" name="phone" required class="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all outline-none" placeholder="9847871212">
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Product Interested In</label>
+                        <select name="product" required class="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all outline-none">
+                            <option value="Fresh Meat">Fresh Organic Meat</option>
+                            <option value="Organic Manure">Organic Manure</option>
+                            <option value="Both">Both Products</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold uppercase tracking-wider text-slate-500">Order Quantity / Message</label>
+                        <textarea name="message" rows="4" class="w-full px-4 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all outline-none" placeholder="How much do you need?"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-5 bg-green-600 hover:bg-green-700 text-white font-bold rounded-xl text-lg transition-all shadow-xl shadow-green-100 flex items-center justify-center gap-3">
+                        Submit Order Inquiry
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                    <p class="text-center text-xs text-slate-400">By submitting, you agree to our wholesale terms of service.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-20 px-6 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+            <div class="col-span-2">
+                <div class="flex items-center gap-2 mb-6">
+                    <div class="w-10 h-10 bg-green-600 rounded-xl flex items-center justify-center text-white font-bold">K</div>
+                    <span class="font-extrabold text-xl uppercase tracking-tight">Khanal Poultry</span>
+                </div>
+                <p class="text-slate-500 max-w-sm mb-8">Premium organic poultry solutions for restaurants, retail, and sustainable farming. Trusted quality, delivered daily from our farm to your business.</p>
+                <div class="text-slate-900 font-bold">Open 24/7 — Support round the clock.</div>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Navigation</h4>
+                <ul class="space-y-4 text-slate-500">
+                    <li><a href="#about" class="hover:text-green-600 transition-colors">Our Story</a></li>
+                    <li><a href="#products" class="hover:text-green-600 transition-colors">Inventory</a></li>
+                    <li><a href="#contact" class="hover:text-green-600 transition-colors">Order Form</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-sm uppercase tracking-widest mb-6">Legal</h4>
+                <ul class="space-y-4 text-slate-500">
+                    <li><a href="#" class="hover:text-green-600 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition-colors">Wholesale Terms</a></li>
+                    <li><a href="#" class="hover:text-green-600 transition-colors">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-20 pt-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-400 text-sm">
+            <p>© 2024 Khanal Poultry Farm. All Rights Reserved.</p>
+            <p>Designed for excellence in agriculture.</p>
+        </div>
+    </footer>
+
+    <script>
+        // GSAP Animations
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Content Animation
+        window.addEventListener('load', () => {
+            const tl = gsap.timeline();
+            tl.from('.hero-content > *', {
+                opacity: 0,
+                y: 50,
+                duration: 0.8,
+                stagger: 0.2,
+                ease: 'power3.out'
+            })
+            .from('.hero-image', {
+                opacity: 0,
+                x: 50,
+                duration: 1,
+                ease: 'power3.out'
+            }, "-=1");
+
+            // Scroll Reveal Animations
+            gsap.utils.toArray('.section-reveal').forEach((section) => {
+                gsap.to(section, {
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power2.out"
+                });
+            });
+        });
+
+        // Smooth Navbar Shrink
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('h-16');
+                nav.classList.remove('h-20');
+            } else {
+                nav.classList.add('h-20');
+                nav.classList.remove('h-16');
+            }
+        });
+    </script>
+</body>
+</html>
